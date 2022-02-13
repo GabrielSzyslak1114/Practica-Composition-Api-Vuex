@@ -13,7 +13,6 @@ export default {
         const store = useStore()
         const texto = ref('')
         const procesarInput = ()=> store.dispatch('filtrarNombre', texto.value)
-        
         return{texto, procesarInput}
     }
 }
