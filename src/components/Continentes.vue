@@ -17,8 +17,7 @@ import {useStore} from 'vuex'
 export default {
 setup(){
     const store = useStore()
-    const filtrar = (region)=> store.dispatch('filtrarRegion', region)  
-    
+    const filtrar = (region)=> store.dispatch('filtrarRegion', region) 
     return{filtrar}
 }
 
@@ -34,7 +33,6 @@ setup(){
     align-items: center;
     height: 100px;
     width: 90%;
-
     padding: 5px;
     margin: 0 auto;
 }
